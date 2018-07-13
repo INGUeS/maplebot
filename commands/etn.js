@@ -7,7 +7,7 @@ exports.run = (client, message, args) => {
   var btcPrice = getJSON('https://maplechange.com/api/v2/tickers/etnbtc.json', function(error, response){
 		if(!error) {
       var buy = response["ticker"]["buy"];
-      var sell = response["ticker"]["sell"];
+      var sell = response["ticker"]["sell "];
       var low = response["ticker"]["low"];
       var high = response["ticker"]["high"];
       var last = response["ticker"]["last"];
